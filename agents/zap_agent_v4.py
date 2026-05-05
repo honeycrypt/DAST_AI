@@ -91,7 +91,7 @@ class Config:
     model: str           = os.environ.get("OLLAMA_MODEL", "qwen")
 
     # Target
-    target: str          = os.environ.get("ZAP_TARGET",  "https://pentest-ground.com:4280/")
+    target: str          = os.environ.get("ZAP_TARGET",  "https://demo.testfire.net/")
 
     # ZAP
     zap_port: int        = int(os.environ.get("ZAP_PORT", "8080"))
@@ -100,10 +100,10 @@ class Config:
 
     # Auth
     zest_login_path: str = os.environ.get("ZEST_LOGIN_PATH", "")
-    login_url: str       = os.environ.get("ZAP_LOGIN_URL",  "http://testphp.vulnweb.com/login.php")
-    post_url: str        = os.environ.get("ZAP_POST_URL",   "http://testphp.vulnweb.com/userinfo.php")
-    default_username: str = os.environ.get("ZAP_USERNAME", "username")
-    default_password: str = os.environ.get("ZAP_PASSWORD", "password")
+    login_url: str       = os.environ.get("ZAP_LOGIN_URL",  "https://demo.testfire.net/login.jsp")
+    post_url: str        = os.environ.get("ZAP_POST_URL",   "https://demo.testfire.net/bank/main.jsp")
+    default_username: str = os.environ.get("ZAP_USERNAME", "admin")
+    default_password: str = os.environ.get("ZAP_PASSWORD", "admin")
 
     # Scan limits
     max_scan_time: int       = int(os.environ.get("MAX_SCAN_TIME", "180"))
